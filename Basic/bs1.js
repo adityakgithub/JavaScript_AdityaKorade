@@ -474,6 +474,7 @@ console.log("-----------*---------")
         console.log(countries)
 
         // remove the last value of the collection
+
         countries.pop()
 
         console.log(countries)
@@ -481,6 +482,33 @@ console.log("-----------*---------")
     }
 
     function2()
+
+    function function5() {
+        const numbers = [10, 20, 30, 40, 50]
+      
+        // for..in loop
+        for (const index in numbers) {
+          console.log('index = ', index)
+          console.log('value at index = ', numbers[index])
+        }
+      }
+      
+    // function5()
+
+    function function4() {
+        const countries = ['india', 'usa', 'uk', 'japan']
+      
+        //   for (let index = 0; index < countries.length; index++) {
+        //     const country = countries[index]
+        //     console.log('country = ', country)
+        //   }
+      
+        for (const country of countries) {
+          console.log('country -> ', country)
+        }
+      }
+      
+    // function4()
     // Arrya Method
     // Push, Pop, splish
     // remove a value at an index
