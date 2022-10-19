@@ -358,25 +358,25 @@ console.log("-----------*---------")
     // Function calling
         function add(n1, n2) {
             console.log(`addition = ${n1 + n2}`)
-          } 
+        } 
       
-          function subtract(n1, n2) {
+        function subtract(n1, n2) {
             console.log(`subtraction = ${n1 - n2}`)
-          }
+        }
       
-          function divide(n1, n2) {
+        function divide(n1, n2) {
             console.log(`division = ${n1 / n2}`)
-          }
+        }
       
-          function multiply(n1, n2) {
+        function multiply(n1, n2) {
             console.log(`multiplication = ${n1 * n2}`)
-          }
+        }
       
-          function remainder(p1, p2) {
+        function remainder(p1, p2) {
             console.log(`remainder = ${p1 % p2}`)
-          }
+        }
       
-          function execute(func) {
+        function execute(func) {
             console.log('calling execute')
             func(10, 20)
             func(20, 30)
@@ -384,13 +384,13 @@ console.log("-----------*---------")
             func(40, 50)
             func(50, 60)
             func(60, 70)
-          }
+        }
       
-          execute(add)
-          execute(subtract)
-          execute(multiply)
-          execute(divide)
-          execute(remainder)
+        execute(add)
+        execute(subtract)
+        execute(multiply)
+        execute(divide)
+        execute(remainder)
     console.log("_____________")
     
     // Function alias
