@@ -204,6 +204,47 @@ console.log("-----------*---------")
                 }
     
     console.log("_____________")
+    
+    //Operator Presedence
+        a = b = 5; // same as writing a = (b = 5);
+        let a = 4 ** 3 ** 2; // Same as 4 ** (3 ** 2); evaluates to 262144
+        let b = 4 / 3 / 2; // Same as (4 / 3) / 2; evaluates to 0.6666...
+        //
+        let a1 = 1;
+        let b2 = 2;
+        typeof a1 + b2; // Equivalent to (typeof a1) + b; result is "number2"
+        // binary operator OP2 must have lower precedence than the unary operator
+
+        //Short-circuiting
+            //console.log(a || console.log((b * c))); // evaluate `a` first, then produce `a` if `a` is "truthy"
+            // console.log(a && console.log((b < c))); // evaluate `a` first, then produce `a` if `a` is "falsy"
+            // console.log(a ?? console.log((b || c))); // evaluate `a` first, then produce `a` if `a` is not `null` and not `undefined`
+            // console.log(a ?? console.log((b && c)));
+            // console.log(a ?? console.log((b , c)));
+            // console.log(a ?? console.log((b < c)));
+            // console.log(a?.b.c); // evaluate `a` first, then produce `undefined` if `a` is `null` or `undefined`
+            
+            //Function:
+                // function A() { console.log('called A'); return false; }
+                // function B() { console.log('called B'); return false; }
+                // function C() { console.log('called C'); return true; }
+                
+                // console.log(C() || B() && A());//=> called C &&// true
+                //console.log(A() && C() || B());//=> called A // called B // false   
+        //End
+
+        // Error
+            //(-1) ** 2 =>-1 ** 2 Wrong 
+            //3++ wrong
+            //a++++ wrong
+            
+            //(a ?? b) || c or a ?? (b || c)=> correct
+            //ia ?? b || c wrong
+        //End
+
+        // Presedence table
+        //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence           
+    console.log("_____________")
 
 console.log("-----------*---------")
 
@@ -522,10 +563,35 @@ console.log("-----------*---------")
           console.log(number)
         })
     }
-    
+
     // Arrya Method
     // Push, Pop, splish
     // remove a value at an index
     // numbers.splice(1, 2)
     // console.log(numbers)
+console.log("-----------*---------")
+
+// Object 
+    // - object literal (JSON)
+    // - using Object root function
+        function function1() {
+            // Object is a root function given by JS
+            const person1 = new Object()
+            person1.name = 'person1'
+            person1.address = 'pune'
+            person1.phone = '+9134343'
+            console.log(person1)
+        }
+    // - using constructor function
+            // by convention, the constructor function
+            // always starts with upper case letter
+        function Person(name, age, address) {
+            this.name = name
+            this.age = age
+            this.address = address
+        }
+        
+        const p1 = new Person('person1', 20, 'pune')
+        console.log(p1)
+    // - [using class]
 console.log("-----------*---------")
