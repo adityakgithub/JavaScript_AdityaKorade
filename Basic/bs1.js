@@ -72,6 +72,29 @@ console.log("-----------*---------")
         console.log(`num2 =${num2}`)
         console.log(`data type of num =${typeof(num2)}` )
 
+        //Example
+            //1.
+            function getCharCount(str) {
+                let a= str.length
+                let b= str.toUpperCase()
+                let c= str.toLowerCase()
+                return a+b+c;
+            }
+            // Sample usage - do not modify
+            console.log(getCharCount("Sam"));
+            //2.
+            const language = "JavaScript";
+
+            language[0];
+            language[language.length-1]
+            language.at(0); // "J"
+            language.at(1); // "a"
+            language.at(-1); // "t"
+            language.at(-2); // "p"
+            language.substring(1, 4); //"ava"
+            language.substring(4); //"Script"
+        //
+
     // boolean
         let canVote = false
         console.log('canVote = ' + canVote)
