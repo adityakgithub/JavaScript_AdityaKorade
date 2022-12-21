@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GetNextAge</title>
+        <style>
+            .input {
+                font-size: 16px;
+                margin-top: 1em;
+                margin-bottom: 1.5em;
+                padding: 0.75em 0.5em;
+                min-width: 200px;
+                border: none;
+                border-left: 7px solid var(--neutral-4);
+                transition: border-left-color 160ms;
+                background-color: white;
+            }
+        </style>
+        <link rel="stylesheet" href="../Text ellipsis Project I/css/index.css">
+        
+    </head>
+    <body>
+        <nav class="navbar">
+            <h1 class="nav-brand">Your age Next Year...</h1>
+        </nav>
+        <div>
+            <label style="color:red; display: block; font-weight:500; font: size 50px; background-color:gray;" for="component-name" >Enter the Age</label>
+            <input type="number" class="input" name="Entertheage" placeholder="Enter age" id="your-age" min="0" max="100" autocomplete="off">    
+        </div>
+        <p>Next Year will be <span id="next-age"></span></p>
+    </body>
+    <script src="js/getage.js"></script>
+</html>
