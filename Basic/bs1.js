@@ -67,8 +67,8 @@ console.log("-----------*---------")
             console.log('address = ' + address)
             console.log('data type of address = ' + typeof(address))
         
-        // 4.
-        let num2 = 100
+        // 4.String Interpolation
+        let num2 = "100"
         console.log(`num2 =${num2}`)
         console.log(`data type of num =${typeof(num2)}` )
 
@@ -93,6 +93,11 @@ console.log("-----------*---------")
             language.at(-2); // "p"
             language.substring(1, 4); //"ava"
             language.substring(4); //"Script"
+        //
+        //Method
+            //1."string".toLowerCase()
+            //2."abc".toUpperCase()
+            //3."string".substring(startingPosition,EndPositionnext)
         //
 
     // boolean
