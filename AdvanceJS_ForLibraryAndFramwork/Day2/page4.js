@@ -16,6 +16,12 @@ function Person(name, age, email) {
   // }
 }
 
+/* 
+  If you take a look at online documentation, you will often see String.prototype.toString(). 
+  Why is there a prototype? This is covered in-depth later in this course. For now, 
+  every time you see String.prototype.something(), 
+  it means there is a method something() that you can call on a String.
+*/
 Person.prototype.canVote = function() {
   if (this.age >= 18) {
     console.log(`${this.name} is eligible for voting`)
@@ -51,3 +57,4 @@ console.log(p2.toString())
 // }
 p2.canVote()
 // p2.printDetails()
+
