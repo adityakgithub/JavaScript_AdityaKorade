@@ -46,6 +46,9 @@ console.log("-----------*---------")
             let salary2 = 10.50
             console.log('salary = ' + salary2)
             console.log('data type of salary = ' + typeof(salary2))
+        //Method
+          //1.num.toString()
+        //
   
     // string
         // 1.
