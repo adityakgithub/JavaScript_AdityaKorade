@@ -512,6 +512,14 @@ console.log("-----------*---------")
 console.log("-----------*---------")
 
 //Basic Of Collection
+    /* 
+    Method
+        .filter() =>e.g 2,3,4,6-->[2,3,4,6].filter(EvenNumberCheckFunction)-->2,4,6(filter the each element & display the result)
+        .find()   =>e.g 2,3,4,6-->[2,3,4,6].filter(EvenNumberfincFunction)-->2(Return first result of function)
+        .map()    =>e.g 2,3,4,6-->[2,3,4,6].filter(EvenNumbercheckFunction)-->true,false,true,true(process the element & show result)
+        .include()=>e.g 2,3,4,6-->[2,3,4,6].filter(EvenNumbercheckFunction)-->true,false,true,true(process the element & show result in boolean)
+        .join()   => method returns a string of the array elements separated by the glue
+    */
     function function1() {
         // collection of numbers
         const numbers = [10, 20, 30, 40, 50, 60, 70, 80]
