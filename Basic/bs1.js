@@ -498,7 +498,7 @@ console.log("-----------*---------")
             }
             console.log(`addition = ${sum}`)
         }
-    
+        
         // add(10, 20)
         // add(10, 20, 30)
         // add(10, 20, 30, 40)
@@ -519,7 +519,14 @@ console.log("-----------*---------")
         .map()    =>e.g 2,3,4,6-->[2,3,4,6].filter(EvenNumbercheckFunction)-->true,false,true,true(process the element & show result)
         .include()=>e.g 2,3,4,6-->[2,3,4,6].filter(EvenNumbercheckFunction)-->true,false,true,true(process the element & show result in boolean)
         .join()   => method returns a string of the array elements separated by the glue
+        .reduce(function(total, currentValue, currentIndex, arr), initialValue)
     */
+    //reduce example
+        const redNumber=[2,3,4,5,6,7,8,9]
+        redNumber.reduce(getsum,0);
+        function getsum(total, num){ return total+num};
+    //
+    
     function function1() {
         // collection of numbers
         const numbers = [10, 20, 30, 40, 50, 60, 70, 80]
@@ -612,6 +619,7 @@ console.log("-----------*---------")
 
 // Object 
     // - object literal (JSON)
+        const objectEx={id:5,title:"adityaisPractisingJavascript",value:true}
     // - using Object root function
         function function1() {
             // Object is a root function given by JS
