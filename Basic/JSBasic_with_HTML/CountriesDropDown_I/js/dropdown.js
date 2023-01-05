@@ -4,6 +4,16 @@
 
 const countries = ["Netherlands", "Japan", "Mongolia"];
 
+/* 
+const getDropdown = (countries) => {
+    console.log(countries);
+    return `<option value="">Please select</option> 
+            ${countries.map(country=> 
+            `<option value=${country.toLowerCase()}>${country}</option>
+            `
+    ).join("")}`
+}
+*/
 
 const html = getDropdown(countries);
 
