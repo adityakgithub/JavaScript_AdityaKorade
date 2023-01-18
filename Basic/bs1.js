@@ -649,6 +649,22 @@ console.log("-----------*---------")
         console.log(otherItems); // ["Tissues", "Oranges", "Tomatoes"]
     //
 
+    //Optional Chaining
+        const user = {
+            details: {
+                name: {
+                    firstName: "Sam"
+                }
+            },
+            data: null
+        }
+        
+        user.details?.name?.firstName; // "Sam"
+        user.data?.id; // undefined
+        user.children?.names; // undefined
+        user.details?.parent?.firstName; // undefined
+    //
+
 console.log("-----------*---------")
 
 // Object 
