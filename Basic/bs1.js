@@ -101,6 +101,14 @@ console.log("-----------*---------")
             //1."string".toLowerCase()
             //2."abc".toUpperCase()
             //3."string".substring(startingPosition,EndPositionnext)
+            //4."string".trim()
+            //5."string".startWith()
+            //6."string".endsWith()
+            //7."string".includes()
+            //8."string".split("thingbywhicharryagetsplit")
+            //9."string".replace("Replacething")
+            //10."string".replaceAll("Replacething")
+
         //
 
     // boolean
@@ -615,11 +623,42 @@ console.log("-----------*---------")
     // remove a value at an index
     // numbers.splice(1, 2)
     // console.log(numbers)
+
+    //Arrya destructuring
+        //oldOne
+            const dimensions1 = [20, 5]
+
+            // create variables
+            const width1 = dimensions1[0];
+            const height1 = dimensions1[1];
+        //
+        const dimensions2 = [20, 5]
+
+        // create variables
+        const [width, height] = dimensions2;//destructuring
+    //
+    //Array concatenation
+        const lat = [5.234];
+        const lng = [1.412];
+        const point = [...lat, ...lng];
+        console.log(point); // [5.234, 1.412];
+
+        const items = ["Tissues", "Oranges"];
+
+        const otherItems = [...items, "Tomatoes"];
+        console.log(otherItems); // ["Tissues", "Oranges", "Tomatoes"]
+    //
+
 console.log("-----------*---------")
 
 // Object 
     // - object literal (JSON)
         const objectEx={id:5,title:"adityaisPractisingJavascript",value:true}
+        //Method
+           const objectExKey=Object.keys(objectEx)//....return keys arrys["id","title","value"]
+           //.entries
+           //.values
+        //
     // - using Object root function
         function function1() {
             // Object is a root function given by JS
@@ -641,4 +680,6 @@ console.log("-----------*---------")
         const p1 = new Person('person1', 20, 'pune')
         console.log(p1)
     // - [using class]
+
+
 console.log("-----------*---------")
