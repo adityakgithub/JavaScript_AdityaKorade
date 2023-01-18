@@ -20,7 +20,8 @@ const getTranslation = (language) => {
     //         return translations.welcome[trKeys[i]]
     //     }
     // }
-    return translations.welcome[language]
+    //return translations.welcome[language]
+    return translations.welcome?.[language]?? "Welcome"
     
     
 }
