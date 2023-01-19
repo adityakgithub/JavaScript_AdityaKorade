@@ -699,3 +699,40 @@ console.log("-----------*---------")
 
 
 console.log("-----------*---------")
+
+// Arrya of Object 
+    /*Knowing that tweets is an array, we can access properties on arrays (such as .length) and call array methods such as (.forEach(), .map(), etc.).  */
+    const tweets = [
+        {
+            id: 1080777336298049537,
+            message: "Hello Twitter 👋",
+            created_at: "2020-01-03 11:46:00",
+            author: {
+                id: 109215315,
+                firstName: "Jad",
+                lastName: "Joubran",
+                handle: "JoubranJad"
+            }
+        },
+        {
+            id: 1080777336298195435,
+            message: "How do you keep track of your notes?",
+            created_at: "2021-02-19 15:32:00",
+            author: {
+                id: 109216891,
+                firstName: "Sam",
+                lastName: "Green",
+                handle: "SamGreen"
+            }
+        }
+    ];
+    tweets.forEach(tweet => {
+        console.log(tweet);
+    });
+    tweets.forEach(tweet => {
+        // console.log(tweet);
+        console.log(tweet.author.handle);
+    });
+    
+//   
+console.log("-----------*---------")
