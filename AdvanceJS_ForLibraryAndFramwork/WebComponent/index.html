@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>app-navbar is rendered below. However, it will not display anything yet.</p>
+    <template id="dashboard-large-template">
+        <h1>Large dashboard</h1>
+    </template>
+
+    <template id="dashboard-small-template">
+        <style>
+            h1 {
+                font-size: 24px;
+            }
+        </style>
+        <h1>Small dashboard</h1>
+    </template>
+
+    <dashboard-stats size="large"></dashboard-stats>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
