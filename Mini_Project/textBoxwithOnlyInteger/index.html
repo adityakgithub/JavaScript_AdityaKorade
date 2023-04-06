@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <input type="text" id="inputBox">
+    <script>
+        const inputBox = document.querySelector("#inputBox");
+        inputBox.addEventListener("keyup",event=>{
+            console.log(event.key.charCodeAt(0));
+            console.log(inputBox.value);
+            // if(event.key.charCodeAt(0)>=97 || event.key.charCodeAt(0)<=122 || event.key.charCodeAt(0)>=65 || event.key.charCodeAt(0)<=90){
+            //     return false;
+            // }
+            
+
+        })
+    </script>
+</body>
+</html>
