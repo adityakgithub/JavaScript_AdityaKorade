@@ -637,7 +637,7 @@ console.log("-----------*---------")
         // create variables
         const [width, height] = dimensions2;//destructuring
     //
-    //Array concatenation
+    //Array concatenation or spread Operator
         const lat = [5.234];
         const lng = [1.412];
         const point = [...lat, ...lng];
