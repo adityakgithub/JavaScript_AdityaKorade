@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+
+    function Person(name, age, email) {
+      this.name = name
+      this.email = email
+      this.age = age
+
+      // this.canVote = function() {
+      //   if (this.age >= 18) {
+      //     console.log(`${this.name} is eligible for voting`)
+      //   } else {
+      //     console.log(`${this.name} is NOT eligible for voting`)
+      //   }
+      // }
+    }
+
+    Person.prototype.canVote = function() {
+      if (this.age >= 18) {
+        console.log(`${this.name} is eligible for voting`)
+      } else {
+        console.log(`${this.name} is NOT eligible for voting`)
+      }
+    }
+
+
+    const p1 = new Person('person1', 40, 'person1@test.com')
+    console.log(p1)
+    console.log('' + p1)
+    console.log(p1.toString())
+    // p1.canVote = function() {
+    //   if (this.age >= 18) {
+    //     console.log(`${this.name} is eligible for voting`)
+    //   } else {
+    //     console.log(`${this.name} is NOT eligible for voting`)
+    //   }
+    // }
+
+    p1.canVote()
+
+    const p2 = new Person('person2', 20, 'person2@test.com')
+    console.log(p2)
+    console.log(`${p2}`)
+    console.log(p2.toString())
+    // p2.canVote = function() {
+    //   if (this.age >= 18) {
+    //     console.log(`${this.name} is eligible for voting`)
+    //   } else {
+    //     console.log(`${this.name} is NOT eligible for voting`)
+    //   }
+    // }
+    p2.canVote()
+    // p2.printDetails()
+  </script>
+</body>
+</html>

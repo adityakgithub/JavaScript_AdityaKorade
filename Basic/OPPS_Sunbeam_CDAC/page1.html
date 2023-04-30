@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page1</title>
+</head>
+<body>
+  
+  <button onclick="showAlert()">click me</button>
+  <button onclick="function1()">create objects</button>
+
+  <script>
+
+    function showAlert() {
+      console.log('hello')
+      console.log(arguments)
+      console.log(this)
+
+      // window.alert('hello')
+      // alert('hello')
+      // this.alert('this is an alert')
+    }
+
+    function Person(name, age, email) {
+      this.name = name
+      this.email = email
+      this.age = age
+    }
+
+    function function1() {
+      const p1 = new Person('person1', 40, 'person1@test.com')
+      console.log(p1)
+      console.log(p1 + '')
+
+      const p2 = new Person('person2', 20, 'person2@test.com')
+      console.log(p2)
+      console.log(`${p2}`)
+    }
+
+  </script>
+</body>
+</html>
